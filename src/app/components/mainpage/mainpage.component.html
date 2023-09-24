@@ -1,1 +1,20 @@
-<p>Welcome to the BookHive!</p>
+<nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li class="nav-item"><a routerLink="/my-books" routerLinkActive="active">My Books</a></li>
+    </ul>
+  </nav>  
+<div class="book-list">
+    <div *ngFor="let book of books" class="book">
+      <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image">
+      <div class="book-details">
+        <h2>{{ book.title }}</h2>
+        <p><strong>Author:</strong> {{ book.author }}</p>
+        <p><strong>Genre:</strong> {{ book.genre }}</p>
+        <p><strong>Description:</strong> {{ book.description }}</p>
+        <p><strong>Price:</strong> {{ book.price }}$</p>
+        <button [routerLink]="['book-details', book.id]" class="details-btn">Details</button>
+      </div>
+    </div>
+  </div>
+  

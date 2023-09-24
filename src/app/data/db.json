@@ -1,44 +1,60 @@
 {
-    "books": [
-        {
-            "imageUrl": "https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg",
-            "title": "Harry Potter and the Sorcerer's Stone",
-            "author": "J.K. Rowling",
-            "description": "The first book in the popular series about the young wizard Harry Potter, who discovers that he is a wizard and enters Hogwarts, the school of witchcraft and wizardry.",
-            "genre": "Fantasy",
-            "price": 19.99
-        },
-        {
-            "imageUrl": "https://m.media-amazon.com/images/I/71FxgtFKcQL._AC_UF1000,1000_QL80_.jpg",
-            "title": "To Kill a Mockingbird",
-            "author": "Harper Lee",
-            "description": "A classic book about a racially unfair trial in small-town America in the 1930s.",
-            "genre": "Historical",
-            "price": 24.99
-        },
-        {
-            "imageUrl": "https://m.media-amazon.com/images/I/51vfuNNWMTS.jpg",
-            "title": "The Hitchhiker's Guide to the Galaxy",
-            "author": "Douglas Adams",
-            "description": "The book describes the adventures of the unfortunate Zeman Arthur Dent, who goes on a space vacation and searches for the meaning of life.",
-            "genre": "ScienceFiction",
-            "price": 14.99
-        },
-        {
-            "imageUrl": "https://images.booksense.com/images/935/262/9780452262935.jpg",
-            "title": "1984",
-            "author": "George Orwell",
-            "description": "A dystopian novel that takes place in an increasingly totalitarian society where surveillance of citizens is everywhere and freedom of speech is forbidden.",
-            "genre": "ScienceFiction",
-            "price": 29.99
-        },
-        {
-            "imageUrl": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781524879761/the-great-gatsby-9781524879761_hr.jpg",
-            "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
-            "description": "The story of Jay Gatsby, a mysterious rich man who throws a decadent party and tries to win back the love of his life.",
-            "genre": "Romance",
-            "price": 17.99
-        }
-    ]
+  "books": [
+    {
+      "id": 1,
+      "imageUrl": "https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "description": "The first book in the popular series about the young wizard Harry Potter, who discovers that he is a wizard and enters Hogwarts, the school of witchcraft and wizardry.",
+      "genre": "Fantasy",
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://m.media-amazon.com/images/I/71FxgtFKcQL._AC_UF1000,1000_QL80_.jpg",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "description": "A classic book about a racially unfair trial in small-town America in the 1930s.",
+      "genre": "Historical",
+      "price": 24.99
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://m.media-amazon.com/images/I/51vfuNNWMTS.jpg",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "description": "The book describes the adventures of the unfortunate Zeman Arthur Dent, who goes on a space vacation and searches for the meaning of life.",
+      "genre": "ScienceFiction",
+      "price": 14.99
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://images.booksense.com/images/935/262/9780452262935.jpg",
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel that takes place in an increasingly totalitarian society where surveillance of citizens is everywhere and freedom of speech is forbidden.",
+      "genre": "ScienceFiction",
+      "price": 29.99
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781524879761/the-great-gatsby-9781524879761_hr.jpg",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "description": "The story of Jay Gatsby, a mysterious rich man who throws a decadent party and tries to win back the love of his life.",
+      "genre": "Romance",
+      "price": 17.99
+    }
+  ],
+  "orderedBooks": [
+    {
+      "id": 1,
+      "imageUrl": "https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "description": "The first book in the popular series about the young wizard Harry Potter, who discovers that he is a wizard and enters Hogwarts, the school of witchcraft and wizardry.",
+      "genre": "Fantasy",
+      "price": 19.99
+    }
+  ]
 }

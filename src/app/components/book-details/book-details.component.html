@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <ul class="nav-list">
+    <li class="nav-item"><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li class="nav-item"><a routerLink="/my-books" routerLinkActive="active">My Books</a></li>
+  </ul>
+</nav>  
+<div class="book-details">
+    <h2>{{ book.title }}</h2>
+    <table class="book-table">
+      <tr>
+        <th>Author:</th>
+        <td>{{ book.author }}</td>
+      </tr>
+      <tr>
+        <th>Genre:</th>
+        <td>{{ book.genre }}</td>
+      </tr>
+      <tr>
+        <th>Description:</th>
+        <td>{{ book.description }}</td>
+      </tr>
+      <tr>
+        <th>Price:</th>
+        <td>{{ book.price | currency }}</td>
+      </tr>
+    </table>
+    <button (click)="orderBook(book)" class="order-btn">Order</button>
+  </div>
+  

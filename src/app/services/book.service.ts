@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 export class BookService {
 
   private apiUrl = 'http://localhost:3000/books';
+  private cartApiUrl = 'http://localhost:3000/orderedBooks';
 
   constructor(private http: HttpClient) { }
 
@@ -21,12 +22,11 @@ export class BookService {
     return this.http.get<Book>(url);
   }
 
-  createBook(book: Book): Observable<Book> {
-    return this.http.post<Book>(this.apiUrl, book);
+  getAllCartBooks(): Observable<Book[]> {
+    return this.http.get<Book[]>(this.cartApiUrl);
   }
 
-  deleteBook(id: number): Observable<void> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.delete<void>(url);
+  createBook(book: Book): Observable<Book> {
+    return this.http.post<Book>(this.cartApiUrl, book);
   }
 }

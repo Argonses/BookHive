@@ -1,0 +1,106 @@
+.book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .book {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .book-image {
+    width: 200px; 
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .book-details {
+    flex-grow: 1;
+  }
+  
+  .book h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .book p {
+    margin: 5px 0;
+  }
+
+  .book:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
+  
+  .details-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    margin: 10px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  
+    &:hover {
+      background-color: #0056b3; 
+    }
+  }
+
+  .order-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  
+    &:hover {
+      background-color: #0056b3; 
+    }
+  }

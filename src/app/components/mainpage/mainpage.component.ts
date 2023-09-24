@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Book } from 'src/app/models/Book';
 import { BookService } from 'src/app/services/book.service';
 
@@ -8,14 +9,13 @@ import { BookService } from 'src/app/services/book.service';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
-  books: Book[] = []; 
+  books: Book[] = [];
 
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService, private router: Router) { }
 
   ngOnInit() {
     this.bookService.getAllBooks().subscribe(books => {
       this.books = books;
-      console.log('All books:', this.books);
     });
   }
 }

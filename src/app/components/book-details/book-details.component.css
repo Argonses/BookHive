@@ -1,0 +1,68 @@
+.book-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .book-table {
+    width: 100%;
+    max-width: 400px; 
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .book-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .book-table th, .book-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
+  
+  .order-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  
+    &:hover {
+      background-color: #0056b3; 
+    }
+  }
