@@ -28,7 +28,7 @@ export class BookDetailsComponent implements OnInit {
   }
 
   orderBook(book: Book) {
-    this.bookService.createBook(book).subscribe(order => {
+    this.bookService.createBook(book).subscribe(() => {
       alert('Book was ordered');
       this.router.navigate([""])
     });

@@ -9,6 +9,11 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class MyBooksComponent {
   cartBooks: Book[] = [];
+  customerFirstName = '';
+  customerLastName = '';
+  customerEmail = '';
+  customerAddress = '';
+  customerCardNumber = '';
 
   constructor(private bookService: BookService) { }
 
@@ -24,6 +29,18 @@ export class MyBooksComponent {
 
   removeCartBook(id: number) {
     this.bookService.deleteBookFromCart(id).subscribe(() => {
+      this.loadCartBooks();
+    });
+  }
+
+  orderBooks() {
+    if (!this.customerFirstName || !this.customerLastName || !this.customerEmail || !this.customerAddress || !this.customerCardNumber) {
+      alert('Some fields are missing...');
+      return;
+    }
+
+    this.bookService.clearCart().subscribe(() => {
+      alert('Books were ordered!');
       this.loadCartBooks();
     });
   }

@@ -55,6 +55,15 @@
       "description": "The book describes the adventures of the unfortunate Zeman Arthur Dent, who goes on a space vacation and searches for the meaning of life.",
       "genre": "ScienceFiction",
       "price": 14.99
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "description": "The first book in the popular series about the young wizard Harry Potter, who discovers that he is a wizard and enters Hogwarts, the school of witchcraft and wizardry.",
+      "genre": "Fantasy",
+      "price": 19.99
     }
   ]
 }

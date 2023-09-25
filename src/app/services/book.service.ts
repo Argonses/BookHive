@@ -34,4 +34,10 @@ export class BookService {
     const url = `${this.cartApiUrl}/${bookId}`;
     return this.http.delete<void>(url);
   }  
+
+  clearCart(): Observable<void> {
+    const clearCartUrl = `${this.cartApiUrl}`; 
+    return this.http.delete<void>(clearCartUrl);
+  }
+  
 }

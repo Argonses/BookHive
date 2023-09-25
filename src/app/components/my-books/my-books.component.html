@@ -21,4 +21,32 @@
       </div>
     </div>
   </div>
+  <div class="terminal">
+    <div class="terminal-header">
+      <h2>Terminal</h2>
+    </div>
+    <div class="terminal-content">
+      <div class="input-section">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" [(ngModel)]="customerFirstName" />
+      </div>
+      <div class="input-section">
+        <label for="surname">Last Name:</label>
+        <input type="text" id="surname" [(ngModel)]="customerLastName" />
+      </div>
+      <div class="input-section">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="customerEmail" />
+      </div>
+      <div class="input-section">
+        <label for="address">Address:</label>
+        <input type="text" id="address" [(ngModel)]="customerAddress" />
+      </div>
+      <div class="input-section">
+        <label for="card-number">Card Number:</label>
+        <input type="number" id="card-number" [(ngModel)]="customerCardNumber" />
+      </div>
+      <button class="order-btn" (click)="orderBooks()">Objednat knihy</button>
+    </div>
+  </div>
   
