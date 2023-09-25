@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Book } from '../models/Book';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin, map, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -35,9 +35,14 @@ export class BookService {
     return this.http.delete<void>(url);
   }  
 
-  clearCart(): Observable<void> {
-    const clearCartUrl = `${this.cartApiUrl}`; 
-    return this.http.delete<void>(clearCartUrl);
-  }
-  
+  clearCart(): Observable<void> { 
+    return this.http.get<Book[]>(this.cartApiUrl).pipe( 
+      switchMap(books => { 
+        const deleteRequests = books.map(book => this.http.delete<void>(`${this.cartApiUrl}/${book.id}`));
+        return forkJoin(deleteRequests).pipe(
+          map(() => undefined) 
+        ); 
+      }) 
+    ); 
+  }  
 }
