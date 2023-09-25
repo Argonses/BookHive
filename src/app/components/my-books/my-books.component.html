@@ -17,6 +17,7 @@
           <p>Description: {{ book.description }}</p>
           <p>Price: {{ book.price | currency }}</p>
         </div>
+        <button class="remove-btn" (click)="removeCartBook(book.id!)">Remove</button>
       </div>
     </div>
   </div>

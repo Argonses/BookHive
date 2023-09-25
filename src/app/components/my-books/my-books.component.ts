@@ -21,4 +21,10 @@ export class MyBooksComponent {
       this.cartBooks = books;
     });
   }
+
+  removeCartBook(id: number) {
+    this.bookService.deleteBookFromCart(id).subscribe(() => {
+      this.loadCartBooks();
+    });
+  }
 }

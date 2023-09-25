@@ -68,3 +68,13 @@
   p {
     margin: 5px 0;
   }
+
+  .remove-btn {
+    background-color: red;
+    height: 50px;
+    width: 150px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+  }

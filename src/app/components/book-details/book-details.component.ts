@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Book } from 'src/app/models/Book';
 import { BookService } from 'src/app/services/book.service';
 
@@ -14,7 +14,8 @@ export class BookDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private bookService: BookService
+    private bookService: BookService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -28,7 +29,8 @@ export class BookDetailsComponent implements OnInit {
 
   orderBook(book: Book) {
     this.bookService.createBook(book).subscribe(order => {
-      console.log('Book ordered:', order);
+      alert('Book was ordered');
+      this.router.navigate([""])
     });
   }
 }

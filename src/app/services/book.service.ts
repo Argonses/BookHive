@@ -29,4 +29,9 @@ export class BookService {
   createBook(book: Book): Observable<Book> {
     return this.http.post<Book>(this.cartApiUrl, book);
   }
+
+  deleteBookFromCart(bookId: number): Observable<void> {
+    const url = `${this.cartApiUrl}/${bookId}`;
+    return this.http.delete<void>(url);
+  }  
 }
