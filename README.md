@@ -1,27 +1,26 @@
 # BookHive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+BookHive is a small e-commerce app that allows users to browse, order and buy books from an online book shop. It is made in Angular with JSON-server as a mock backend.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To install the project, you need to have [Node.js] and [Angular CLI] installed on your system. Then, follow these steps:
 
-## Code scaffolding
+- Clone the repository from GitHub: `git clone https://github.com/Argonses/BookHive.git`
+- Navigate to the project folder: `cd BookHive`
+- Install the dependencies: `npm install` 
+- Start the JSON-server: `cd src/app/data` and then `json-server --watch db.json`
+- Start the Angular app: `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+The app will run on `http://localhost:4200/` by default. You can see the list of books on the home page, and use the buttons to add them to your cart or view their details. You can also search for books by title, author or genre using the search bar. To place an order, you need to register or login with your email and password.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+The app has the following features:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- CRUD operations on books using JSON-server as a mock backend
+- Shopping cart functionality using local storage
+- Order placement and confirmation
+- Search functionality by title, author or genre
