@@ -4,6 +4,18 @@
       <li class="nav-item"><a routerLink="/my-books" routerLinkActive="active">My Books</a></li>
     </ul>
   </nav>  
+  <div class="search-bar">
+    <select [(ngModel)]="selectedGenre" (change)="searchByGenre()">
+      <option value="">Select Genre</option>
+      <option value="Historical">Historical</option>
+      <option value="Education">Education</option>
+      <option value="Travel">Travel</option>
+      <option value="Biographical">Biographical</option>
+      <option value="Philosophical">Philosophical</option>
+      <option value="ScienceFiction">Science Fiction</option>
+      <option value="Fantasy">Fantasy</option>
+    </select>
+  </div>  
 <div class="book-list">
     <div *ngFor="let book of books" class="book">
       <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image">

@@ -10,12 +10,27 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class MainpageComponent implements OnInit {
   books: Book[] = [];
+  selectedGenre: string = ''; 
 
   constructor(private bookService: BookService, private router: Router) { }
 
   ngOnInit() {
+    this.loadAllBooks();
+  }
+
+  loadAllBooks() {
     this.bookService.getAllBooks().subscribe(books => {
       this.books = books;
     });
+  }
+
+  searchByGenre() {
+    if (this.selectedGenre) {
+      this.bookService.getBooksByGenre(this.selectedGenre).subscribe(books => {
+        this.books = books;
+      });
+    } else {
+      this.loadAllBooks();
+    }
   }
 }
